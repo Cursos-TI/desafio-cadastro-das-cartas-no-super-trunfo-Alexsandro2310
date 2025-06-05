@@ -10,6 +10,8 @@ int main() {
     float areakm1;
     float pib1;
     int pontosturisticos1;
+    float densidade1;
+    float pibPerCapita1;
 
     //VARIAVEIS DA SEGUNDA CARTA DO JOGO
 
@@ -20,6 +22,8 @@ int main() {
     float areakm2;
     float pib2;
     int pontosturisticos2;
+    float densidade2;
+    float pibPercapita2;
 
 
     //ENTRADA DE DADOS DA PRIMEIRA CARTA
@@ -30,7 +34,7 @@ int main() {
     printf("Digite o codigo da primeira carta (01-04): \n");
     scanf("%d", &codigo1);
 
-    printf("Digite o nome da cidade: \n"); //TIREI O & ANTES DO NOME CIDADE POIS ARRAYS JÁ SAO CONVERTIDOS PARA PONTEIROS
+    printf("Digite o nome da cidade:\n"); //TIREI O & ANTES DO NOME CIDADE POIS ARRAYS JÁ SAO CONVERTIDOS PARA PONTEIROS
     scanf("%s", cidade1);
 
     printf("Informe a população da cidade; \n");
@@ -77,11 +81,19 @@ int main() {
     printf("Informe quantos pontos turisticos tem na cidade: \n");
     scanf("%d", &pontosturisticos2);    
 
+    //ADICIONANDO O CALCULO DE DENSIDADE POPULACIONAL E PIB PER CAPITA DO NIVEL AVENTUREIRO
+
+    densidade1 = populacao1 / areakm1;
+    pibPerCapita1 = pib1 / populacao1;
+
+    densidade2 = populacao2 / areakm2;
+    pibPercapita2 = pib2 / populacao2;
+
    
 
     //EXIBIÇÃO DAS CARTAS
 
-    // Exibição da primeira carta
+    // Exibição da primeira carta //adicionado novos calculos
 
     printf("\nCarta 01:\n");
     printf("Estado: %c\n", estado1);
@@ -91,10 +103,15 @@ int main() {
     printf("Área: %.2f km²\n", areakm1);
     printf("PIB: %.2f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2f reais\n", pibPerCapita1);
+
+
 
 
     //EXIBIÇÃO DA SEGUNDA CARTA
     ////ESSE PRINTF ABAIXO COLOQUEI PARA SEPARAR UMA CARTA DA OUTRA NO TERMINAL.
+    // ADICIONADO NOVOS CALCULOS DO NIVEL AVENTUREIRO.
 
      printf("\n----------------------------------------\n\n");
 
@@ -106,6 +123,9 @@ int main() {
     printf("Área: %.2f km²\n", areakm2);
     printf("PIB: %.2f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontosturisticos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2f reais\n", pibPercapita2);
+
 
     return 0;
 }
