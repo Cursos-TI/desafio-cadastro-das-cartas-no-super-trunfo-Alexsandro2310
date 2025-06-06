@@ -42,7 +42,7 @@ int main() {
     scanf("%s", cidade1);
 
     printf("Informe a população da cidade; \n");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Informe a area da cidade (km²): \n");
     scanf("%f", &areakm1);
@@ -74,7 +74,7 @@ int main() {
     scanf("%s", cidade2);
 
     printf("Informe a população da cidade; \n");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Informe a area da cidade (km²): \n");
     scanf("%f", &areakm2);
