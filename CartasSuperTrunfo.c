@@ -6,13 +6,13 @@ int main() {
     char estado1;
     int codigo1;
     char cidade1[50];
-    unsigned long int populacao1; // Alterado para unsigned long int
+    unsigned long int populacao1; 
     float areakm1;
     float pib1;
     int pontosturisticos1;
     float densidade1;
     float pibPerCapita1;
-    float superPoder1; // Nova variável para o Super Poder
+    float superPoder1; 
 
 
     //VARIAVEIS DA SEGUNDA CARTA DO JOGO
@@ -20,13 +20,13 @@ int main() {
     char estado2;
     int codigo2;
     char cidade2[50];
-    unsigned long int populacao2; // Alterado para unsigned long int
+    unsigned long int populacao2; 
     float areakm2;
     float pib2;
     int pontosturisticos2;
     float densidade2;
     float pibPercapita2;
-    float superPoder2; // Nova variável para o Super Poder
+    float superPoder2; 
 
 
 
