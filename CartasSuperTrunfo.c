@@ -93,6 +93,12 @@ int main() {
     densidade2 = populacao2 / areakm2;
     pibPercapita2 = pib2 / populacao2;
 
+     // Cálculo do Super Poder
+    superPoder1 = populacao1 + areakm1 + pib1 + pontosturisticos1 + pibPerCapita1 + (1.0 / densidade1);
+    superPoder2 = populacao2 + areakm2 + pib2 + pontosturisticos2 + pibPercapita2 + (1.0 / densidade2);
+
+
+
    
 
     //EXIBIÇÃO DAS CARTAS
